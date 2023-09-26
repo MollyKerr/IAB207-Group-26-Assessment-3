@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+
+   {% block header %} 
+   <div class="card mx-3 mb-2">
+        <img class="card-img-top" src="static/img/gala_charity.jpg" alt="Leukemia photo">
+   </div>
+    {% endblock %}
+
+
+   {% block content %}
+
+   <!-- First Page -->
+   <div class="title_text">
+        <h1>Leukemia Charity Gala</h1>
+        <h2 class="index-card-text"><a href="{{ url_for('fifth.construction') }}">Leukemia Foundation</a></h2>
+        <h2 class="index-card-text"><a href="{{ url_for('fifth.construction') }}">Community support</a></h2>
+   </div>
+
+   <div class="description_text">
+        <h2>Description</h2>
+        <p>Leukemia begins in a cell in the bone marrow. The cell undergoes a change and becomes a type of leukemia cell. Once the marrow cell undergoes a leukemic change, the leukemia cells may grow and survive better than normal cells. Over time, the leukemia cells crowd out or suppress the development of normal cells. The rate at which leukemia progresses and how the cells replace the normal blood and marrow cells are different with each type of leukemia. That's why we would appreciate your support. Many young individuals have to suffer through this disease alone. Please support our mission to provide support to those who need it.</p>
+    </div>
+
+    <div class="summary-box mb-2 border p-3 container-fluid pl-5 mx-auto">
+        <h2>Information</h2>
+        <ul>
+            <div class="summary_box_1 mb-2 border p-3 container-fluid pl-5 mx-auto">
+                <h3><a href="{{ url_for('second.create_update') }}"> Get Tickets</a></h3> <!--Add link-->
+                <p> From $45.00</p>
+            </div>
+
+            <div class="summary_box_2 mb-2 border p-3 container-fluid pl-5 mx-auto">
+                <h3><a href="{{ url_for('fifth.construction') }}">Donate to Leukemia Foundation</a></h3>
+            </div>
+
+            <div class="summary_box_2 mb-2 border p-3 container-fluid pl-5 mx-auto">
+                <h3>Status</h3>
+                <p> Limited tickets Left </p>
+            </div>
+     </div>
+
+     <!--Second Page (comment section)-->
+
+     <div class="summary-box mb-2 border p-3 container-fluid pl-5 mx-auto"> <!--centre text-->
+        <h2>Community Section</h2>
+
+        <div class="comment_1 mb-2 border p-3 container-fluid pl-5 mx-auto">
+            <h3>User 1</h3>
+            <p> Please support this foundation!</p>
+        </div>
+
+        <div class="comment_2 mb-2 border p-3 container-fluid pl-5 mx-auto">
+            <h3>User 2</h3>
+            <p>Thank you for organising this. My daughter was recently diagnosed with Leukemia support and awareness is so important.</p>
+        </div>
+
+        <div style="display: flex; align-items: center;">
+            <div class="form-group" style="flex: 1;">
+                <input type="text" id="attendees" name="attendees" required style="width: 100%;">
+            </div>
+            <button class="post-button" style="margin-left: 10px;">Post</button>
+        </div>
+    </div>
+
+   {% endblock %}

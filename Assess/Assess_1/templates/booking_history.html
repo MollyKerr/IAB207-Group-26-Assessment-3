@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+
+   {% block header %} 
+   <div class="summary-box mb-2 border p-3 container-fluid pl-5 mx-auto">
+        <h2>Booking History</h2>
+    </div>
+   {% endblock %}
+
+
+   {% block content %}
+   <div class="summary-box mb-2 border p-3 container-fluid pl-5 mx-auto">
+        <h2>Upcoming events</h2>
+    </div>
+
+
+   <div class="card-group my-4">
+    <div class="card mx-1 mb-1">
+    <img class="card-img-top" src="static/img/gala_charity.jpg" alt="Leukemia photo">
+       <div class="card-body">
+            <h5 class="index-card-title"><a href="{{ url_for('third.event_details') }}">Leukemia Charity Gala</a></h5>
+            <p class="index-card-text"><a href="{{ url_for('fifth.construction') }}">Leukemia Foundation</a></p>
+            <p class="index-card-text"><a href="{{ url_for('fifth.construction') }}"> Community support </a></p>
+            <p class="index-card-text"> The Leukemia Charity Gala is an event run by the Leukemia foundation yearly to raise awareness and garner donations for their charity efforts.
+            </p>
+       </div>
+       <div class="card-footer"><small class="text-muted">This event will occur on the 30/10/2023 (--days)</small></div>
+   </div>
+
+   <div class="card-group my-4">
+    <div class="card mx-1 mb-1">
+    <img class="card-img-top" src="static/img/nudgee_charity.jpg" alt="Nudgee photo">
+       <div class="card-body">
+            <h5 class="index-card-title"><a href="{{ url_for('third.event_details') }}">Nudgee beach clean up</a></h5>
+            <p class="index-card-text"><a href="{{ url_for('fifth.construction') }}"> Nudgee Council </a></p>
+            <p class="index-card-text"><a href="{{ url_for('fifth.construction') }}"> Clean up efforts </a></p>
+            <p class="index-card-text"> Nudgee beach has become increasingly dirty over the last couple of months due to abnormal weather conditions. Please volenteer your time and help us restore the mudflats to their beautiful condition.
+            </p>
+       </div>
+       <div class="card-footer"><small class="text-muted">This event will occur on the 10/10/2023 (--days)</small></div>
+   </div>
+
+   
+   <div class="summary-box mb-2 border p-3 container-fluid pl-5 mx-auto"> <!--centre text-->
+        <h2>Past events</h2>
+    </div>
+
+   <div class="card-group my-4">
+    <div class="card mx-1 mb-1">
+    <img class="card-img-top" src="static/img/beach_charity.png" alt="Sea photo">
+       <div class="card-body">
+            <h5 class="index-card-title"><a href="{{ url_for('third.event_details') }}">Plastics' not fantastic clean up day</a></h5>
+            <p class="index-card-text"><a href="{{ url_for('fifth.construction') }}"> Sea Shepherd Australia</a></p>
+            <p class="index-card-text"><a href="{{ url_for('fifth.construction') }}">Clean up efforts </a></p>
+            <p class="index-card-text"> Come join us as we clean up our shores! Everyday more plastic is swept into the ocean and we need your help to clean it up. Come one come all! We'll have a ball!
+            </p>
+       </div>
+       <div class="card-footer"><small class="text-muted">This event is available</small></div>
+   </div>
+
+   <div class="card-group my-4">
+    <div class="card mx-2 mb-2">
+    <img class="card-img-top" src="static/img/poverty_charity.jpg" alt="Food photo">
+       <div class="card-body">
+            <h5 class="index-card-title"><a href="{{ url_for('third.event_details') }}">Food for folks meal support</a></h5>
+            <p class="index-card-text"><a href="{{ url_for('fifth.construction') }}"> Food for Folks </a></p>
+            <p class="index-card-text"><a href="{{ url_for('fifth.construction') }}"> Poverty Alleviation </a></p>
+            <p class="index-card-text"> Food for Folks is a charity organisation that seeks to give those with less more. Please join us this Sunday to give back to your local community.
+            </p>
+       </div>
+       <div class="card-footer"><small class="text-muted">This event is recommended based on previous bookings!</small></div>
+   </div>
+   {% endblock %}

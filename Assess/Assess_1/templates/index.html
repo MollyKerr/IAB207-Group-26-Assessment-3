@@ -1,0 +1,139 @@
+{% extends "base.html" %}
+
+   {% block header %} 
+<!-- Search Bar -->  
+   <div class="container">
+      <div class="row justify-content-center mt-5 pb-4">
+          <div class="col-md-12">
+              <div class="card shadow p-5 mb-5 bg-light">
+                  <h1 class="text-center mb-3">Find an event</h1>
+  
+                  <div class="text-center mb-3">
+                      <form class="form-inline d-flex flex-nowrap justify-content-center">
+                          <input type="text" class="form-control mx-2" id="searchterm">
+                          <button type="submit" class="btn btn-primary">Search</button>
+                      </form>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+   {% endblock %}
+   <!--href="{{ url_for('fifth.construction') }}"></a-->
+   {% block content %}
+
+<!-- Five site goals section-->
+      <div class="card-group my-4">
+         <div class="card mx-5 mb-6">
+            <img class="card-img-top" src="static/Img/land_life.png" alt = " 1 | Disaster Relief">
+            <h5 class="index-card-text"><a href="{{ url_for('fifth.construction') }}"> 1 | Disaster Relief </a></h5>
+         </div>
+
+         <div class="card mx-5 mb-6">
+            <img class="card-img-top" src="static/Img/quality_education.png" alt =" 2 | Education ">
+            <h5 class="index-card-text"><a href="{{ url_for('fifth.construction') }}">2 | Education </a> </h5>
+         </div>
+
+         <div class="card mx-5 mb-6">
+            <img class="card-img-top" src="static/Img/no_poverty.png" alt = " 3 | Poverty Alleviation ">
+            <h5 class="index-card-text"><a href="{{ url_for('fifth.construction') }}"> 3 | Poverty Alleviation </a> </h5>
+         </div>
+
+         <div class="card mx-5 mb-6">
+            <img class="card-img-top" src="static/Img/climate_action.png" alt = " 4 | Climate Action ">
+            <h5 class="index-card-text"><a href="{{ url_for('fifth.construction') }}"> 4 | Climate Action </a> </h5>
+         </div>
+
+         <div class="card mx-5 mb-6">
+            <img class="card-img-top" src="static/Img/water_life.png" alt = " 5 | Clean up Efforts ">
+            <h5 class="index-card-text"><a href="{{ url_for('fifth.construction') }}"> 5 | Clean up Efforts </a> </h5>
+         </div>
+      </div>
+
+
+<!-- First three events-->
+      <div class="card-group my-4">
+         <div class="card mx-3 mb-2">
+            <img class="card-img-top" src="static/img/gala_charity.jpg" alt="Leukemia photo">
+            <div class="card-body">
+                <h5 class="index-card-title"><a href="{{ url_for('third.event_details') }}">Leukemia Charity Gala</a></h5>
+                <p class="index-card-text"><a href="{{ url_for('fifth.construction') }}">Leukemia Foundation</a></p>
+                <p class="index-card-text"><a href="{{ url_for('fifth.construction') }}"> Community support </a></p>
+                <p class="index-card-text"> The Leukemia Charity Gala is an event run by the Leukemia foundation yearly to raise awareness and garner donations for their charity efforts.
+                </p>
+            </div>
+            <div class="card-footer"><small class="text-muted">This event is available</small></div>
+        </div>
+
+         <div class="card mx-3 mb-2">
+            <img class="card-img-top" src="static/img/poverty_charity.jpg" alt="Food photo">
+            <div class="card-body">
+               <h5 class="index-card-title"><a href="{{ url_for('third.event_details') }}">Food for folks meal support</a></h5>
+               <p class="index-card-text"><a href="{{ url_for('fifth.construction') }}"> Food for Folks </a></p>
+                <p class="index-card-text"><a href="{{ url_for('fifth.construction') }}"> Poverty Alleviation </a></p>
+                <p class="index-card-text"> Food for Folks is a charity organisation that seeks to give those with less more. Please join us this Sunday to give back to your local community.
+                </p>
+            </div>
+            <div class="card-footer"><small class="text-muted">This event is available</small></div>
+         </div>
+
+         <div class="card mx-3 mb-2">
+            <img class="card-img-top" src="static/img/nudgee_charity.jpg" alt="Nudgee photo">
+            <div class="card-body">
+               <h5 class="index-card-title"><a href="{{ url_for('third.event_details') }}">Nudgee beach clean up</a></h5>
+               <p class="index-card-text"><a href="{{ url_for('fifth.construction') }}"> Nudgee Council </a></p>
+                <p class="index-card-text"><a href="{{ url_for('fifth.construction') }}"> Clean up efforts </a></p>
+                <p class="index-card-text"> Nudgee beach has become increasingly dirty over the last couple of months due to abnormal weather conditions. Please volenteer your time and help us restore the mudflats to their beautiful condition.
+                </p>
+            </div>
+            <div class="card-footer"><small class="text-muted">This event has limited places</small></div>
+         </div>
+      </div>
+   </div>
+
+   <!--Second three events-->
+   <div class="card-group my-4">
+      <div class="card mx-3">
+         <img class="card-img-top" src="static/img/climate_charity.jpeg" alt="Climate photo">
+         <div class="card-body">
+            <h5 class="index-card-title"><a href="{{ url_for('third.event_details') }}">Climate talks, climate action talk </a></h5>
+            <p class="index-card-text"><a href="{{ url_for('fifth.construction') }}"> Nature Australia </a></p>
+                <p class="index-card-text"><a href="{{ url_for('fifth.construction') }}"> Climate Action </a></p>
+                <p class="index-card-text"> Nature Australia hosts climate talks every year, inviting climate activists to help educate others about the importance of taking action now.
+                </p>
+         </div>
+         <div class="card-footer"><small class="text-muted">This event has limited places</small></div>
+      </div>
+      
+      <div class="card mx-3">
+         <img class="card-img-top" src="static/img/beach_charity.png" alt="Sea photo">
+         <div class="card-body">
+            <h5 class="index-card-title"><a href="{{ url_for('third.event_details') }}">Plastics' not fantastic clean up day</a></h5>
+            <p class="index-card-text"><a href="{{ url_for('fifth.construction') }}"> Sea Shepherd Australia</a></p>
+            <p class="index-card-text"><a href="{{ url_for('fifth.construction') }}">Clean up efforts </a></p>
+            <p class="index-card-text"> Come join us as we clean up our shores! Everyday more plastic is swept into the ocean and we need your help to clean it up. Come one come all! We'll have a ball!
+            </p>
+         </div>
+         <div class="card-footer"><small class="text-muted">This event is unavailable</small></div>
+      </div>
+
+      <div class="card mx-3">
+         <img class="card-img-top" src="static/img/teddy_charity.jpg" alt="Read photo">
+            alt="Italy">
+         <div class="index-card-body">
+            <h5 class="index-card-title"><a href="{{ url_for('third.event_details') }}">Reading teddy bear picnic</a></h5>
+            <p class="index-card-text"><a href="{{ url_for('fifth.construction') }}"> Room to read </a>/p>
+                <p class="index-card-text"><a href="{{ url_for('fifth.construction') }}"> Education </a></p>
+                <p class="index-card-text"> Reading is an essential part of a child's development. Unfortunately, not every child has access to the wonderful process of storytelling. Come and read to children and make a difference today.
+                </p>
+         </div>
+         <div class="card-footer"><small class="text-muted">This event is unavailable</small></div>
+      </div>
+   </div>
+</div>
+
+<div class="history_button" style="padding-top: 10px; margin: 0 auto; text-align: center;">
+   <h1><a href="{{ url_for('forth.history') }}">View previous bookings</a></h1>
+</div>
+   {% endblock %}

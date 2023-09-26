@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+
+   {% block header %} 
+   {% endblock %}
+
+
+   {% block content %}
+
+   <body>
+
+    <div class="form-title mb-2 border p-3 container-fluid pl-5 mx-auto">
+        <h1>Book tickets</h1>
+    </div>
+    
+    <div class="form-container container">
+        <div class="form-row">
+            <div class="form-group col-md-6" style="padding-bottom: 10px;">
+                <label for="firstName">First Name *</label>
+                <input type="text" class="form-control" id="firstName" name="firstName" required>
+            </div>
+    
+            <div class="form-group col-md-6" style="padding-bottom: 10px;">
+                <label for="lastName">Last Name *</label>
+                <input type="text" class="form-control" id="lastName" name="lastName" required>
+            </div>
+        </div>
+    
+        <div class="form-row">
+            <div class="form-group col-md-6" style="padding-bottom: 10px;">
+                <label for="email">Email *</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+    
+            <div class="form-group col-md-6" style="padding-bottom: 10px;">
+                <label for="phoneNumber">Phone Number *</label>
+                <input type="tel" class="form-control" id="phoneNumber" name="phoneNumber" required>
+            </div>
+        </div>
+    
+        <div class="form-row">
+            <div class="form-group col-md-6" style="padding-bottom: 10px;">
+                <label for="attendees">Number of Attendees *</label>
+                <input type="number" class="form-control" id="attendees" name="attendees" required>
+            </div>
+        </div>
+   
+         <div class="form-group checkbox-label" style="padding-bottom: 20px;">
+            <label>
+               Would you like to subscribe to this organization to receive updates about future activities and offers?
+               <input type="checkbox" name="subscribe">
+            </label>
+         </div>
+      </div>
+
+      <div class="summary-box mb-2 border p-3 container-fluid pl-5 mx-auto">
+         <h2>Summary</h2>
+         <ul>
+            <li>Summary of the tickets</li>
+            <li>The date and time of the event</li>
+            <li>The location of the event</li>
+            <li>Any additional essential information</li>
+         </ul>
+         <p>The total price is: $--.--</p>
+      </div>
+   
+      <button class="continue-button">Continue</button>
+      
+   
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+   </body>
+
+   {% endblock %}

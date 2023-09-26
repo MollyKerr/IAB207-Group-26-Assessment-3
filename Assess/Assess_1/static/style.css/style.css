@@ -1,0 +1,182 @@
+/* Base CSS */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+.light-blue-background {
+    background-color: lightblue;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.footer {
+    background-color: #f8f9fa;
+    padding: 30px 0;
+}
+
+.footer_headings {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer_ul_amrc {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer_ul_amrc li a {
+    color: #7c7c7c;
+    text-decoration: none;
+}
+
+.footer_ul_amrc li a:hover {
+    color: #252525;
+    text-decoration: none;
+}
+
+.footer_ul2_amrc {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer_ul2_amrc li a {
+    color: #7c7c7c;
+    text-decoration: none;
+}
+
+.footer_ul2_amrc li a:hover {
+    color: #252525;
+    text-decoration: none;
+}
+
+/* Index CSS */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0; 
+    padding: 20px;
+}
+
+.light-blue-background {
+    background-color: lightblue;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.footer {
+    background-color: #f8f9fa;
+    padding: 30px 0;
+}
+
+.footer_headings {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer_ul_amrc {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer_ul_amrc li a {
+    color: #7c7c7c;
+    text-decoration: none;
+}
+
+.footer_ul_amrc li a:hover {
+    color: #252525;
+    text-decoration: none;
+}
+
+.footer_ul2_amrc {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer_ul2_amrc li a {
+    color: #7c7c7c;
+    text-decoration: none;
+}
+
+.footer_ul2_amrc li a:hover {
+    color: #252525;
+    text-decoration: none;
+}
+
+/* Event create update */
+
+body {
+font-family: Arial, sans-serif;
+margin: 0; 
+padding: 20px;
+}
+.form-title {
+padding-top: 40px;
+}
+.form-container {
+display: inline-block;
+vertical-align: top;
+}
+.form-group {
+margin-bottom: 10px;
+display: flex;
+flex-direction: column;
+}
+.form-group label {
+margin-bottom: 5px;
+font-weight: bold;
+text-align: left;
+}
+.form-group input, .form-group checkbox {
+width: 100%;
+padding: 5px;
+}
+.form-group.checkbox-label {
+display: flex;
+align-items: center;
+text-align: left;
+}
+.summary-box {
+margin-top: 20px;
+background-color: lightgrey;
+}
+.continue-button {
+display: block;
+margin-top: 20px;
+padding: 10px 20px; 
+font-size: 18px; 
+margin-left: auto;
+margin-right: auto;
+}
+
+
+
+/* event_details */
+
+/* Booking history */
+
+/* Under construction */
+.construction_page_text {
+    padding: 40px 40px
+}
